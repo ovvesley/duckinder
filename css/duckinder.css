@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+body{
+  font-family: 'Muli', sans-serif;}
 .matchCard{
     border-radius: 20px;
     animation: start_matchCard cubic-bezier(0.785, 0.135, 0.15, 0.86) 0.4s alternate; 
-  }  
+  }
   @keyframes start_matchCard {
     from {left: 100%;}
     to {left: 0%;}
@@ -12,3 +15,6 @@
   .matchCard button {
       border-radius: 15px;
   }
+  .matchCard button {
+    border-radius: 15px;
+}
