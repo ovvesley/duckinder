@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +11,6 @@
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/login.css">
-
 </head>
 
 <body>
@@ -28,28 +26,30 @@
                         aria-controls="pills-signin" aria-selected="false">Login</a>
                 </li>
             </ul>
+
         </div>
+        <?php signup_alert_message()?>
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-signup" role="tabpanel" aria-labelledby="pills-signup-tab">
                 <div class="signup-content">
                     <div class="signup-form">
                         <h2 class="form-title">Cadastrar</h2>
-                        <form method="POST" class="register-form" action="scripts/register" id="register-form">
+                        <form method="POST" class="register-form" action="script/signup-form.php" id="register-form">
                             <div class="form-group">
                                 <label for="name"><i class="zmdi zmdi-account material-icons-name"></i></label>
                                 <input type="text" name="name" id="name" placeholder="Digite seu nome" />
                             </div>
                             <div class="form-group">
                                 <label for="email"><i class="fa fa-user"></i></label>
-                                <input type="email" name="email" id="username " placeholder="Digite seu Usuario" />
+                                <input type="text" name="username" id="username " placeholder="Digite seu Usuario" />
                             </div>
                             <div class="form-group">
                                 <label for="pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="pass" id="password" placeholder="Digite sua senha" />
+                                <input type="password" name="pass" id="pass" placeholder="Digite sua senha" />
                             </div>
                             <div class="form-group">
-                                <label for="re-pass"><i class="zmdi zmdi-lock-outline"></i></label>
-                                <input type="password" name="re_pass" id="re_pass" placeholder="Confirme Sua Senha" />
+                                <label for="repass"><i class="zmdi zmdi-lock-outline"></i></label>
+                                <input type="password" name="repass" id="repass" placeholder="Confirme Sua Senha" />
                             </div>
                             <div class="form-group">
                                 <input type="checkbox" name="agree-term" id="agree-term" class="agree-term" />
@@ -77,10 +77,10 @@
 
                     <div class="signin-form">
                         <h2 class="form-title">Login</h2>
-                        <form method="POST" class="register-form" id="login-form">
+                        <form method="POST" class="register" id="script/signin-form.php">
                             <div class="form-group">
-                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_name" id="your_name" placeholder="Nome" />
+                                <label for="your_username"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="text" name="your_username" id="your_username" placeholder="Username" />
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
