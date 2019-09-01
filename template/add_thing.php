@@ -11,15 +11,18 @@
     <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/duckinder.css">
-    
+
 </head>
 
 <body>
 
+<div class="container">
+        Adicionar decrição
+</div>
+
 <?php
 
 
-var_dump($_SESSION)
 
 ?>
 
