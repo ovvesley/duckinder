@@ -77,14 +77,14 @@
 
                     <div class="signin-form">
                         <h2 class="form-title">Login</h2>
-                        <form method="POST" class="register" id="script/signin-form.php">
+                        <form method="POST" class="register" id="signin-form" action="script/signin-form.php">
                             <div class="form-group">
                                 <label for="your_username"><i class="zmdi zmdi-account material-icons-name"></i></label>
-                                <input type="text" name="your_username" id="your_username" placeholder="Username" />
+                                <input type="text" name="username" id="your_username" placeholder="Username" />
                             </div>
                             <div class="form-group">
                                 <label for="your_pass"><i class="zmdi zmdi-lock"></i></label>
-                                <input type="password" name="your_pass" id="your_pass" placeholder="Senha" />
+                                <input type="password" name="pass" id="your_pass" placeholder="Senha" />
                             </div>
 
                             <div class="form-group form-button">
